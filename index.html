@@ -41,13 +41,13 @@
 
         body {
             font-family: 'Lexend', sans-serif;
-            background-color: #102216;
+            background-color: #0b1811;
             color: #ffffff;
         }
 
         /* Navbar */
         .navbar {
-            background-color: #102216;
+            background-color: #0b1811;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
             padding: 16px 0;
         }
@@ -80,7 +80,7 @@
         }
         .nav-download-btn {
             background-color: #13ec5b;
-            color: #102216;
+            color: #0b1811;
             font-size: 14px;
             font-weight: 600;
             padding: 10px 24px;
@@ -95,7 +95,7 @@
 
         /* Hero Section */
         .hero-section {
-            background-color: #102216;
+            background-color: #0b1811;
             padding: 80px 0 100px;
         }
         .container-regular {
@@ -129,7 +129,7 @@
         }
         .hero-badge-new {
             background-color: #13ec5b;
-            color: #102216;
+            color: #0b1811;
             font-size: 12px;
             font-weight: 700;
             padding: 2px 8px;
@@ -156,12 +156,17 @@
             color: rgba(255, 255, 255, 0.7);
             margin-bottom: 32px;
         }
+        .hero-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
         .hero-download-btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
             background-color: #13ec5b;
-            color: #102216;
+            color: #0b1811;
             font-size: 16px;
             font-weight: 600;
             padding: 14px 28px;
@@ -174,6 +179,27 @@
             opacity: 0.9;
         }
         .hero-download-btn svg {
+            flex-shrink: 0;
+        }
+        .hero-download-btn-android {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 14px 28px;
+            border-radius: 100px;
+            text-decoration: none;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.1s ease, background-color 0.2s ease;
+        }
+        .hero-download-btn-android:hover {
+            transform: translateY(-2px);
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+        .hero-download-btn-android svg {
             flex-shrink: 0;
         }
 
@@ -253,7 +279,7 @@
 
         /* Footer */
         .footer-section {
-            background-color: #102216;
+            background-color: #0b1811;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             padding: 40px 0;
         }
@@ -308,6 +334,9 @@
             .button-group {
                 justify-content: center;
             }
+            .hero-buttons {
+                justify-content: center;
+            }
             .footer-content {
                 flex-direction: column;
                 text-align: center;
@@ -343,7 +372,7 @@
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="hero-badge-new">New</span>
-                        <span class="hero-badge-text">Now Available</span>
+                        <span class="hero-badge-text">Now on iOS & Android</span>
                     </div>
                     <h1 class="hero-title">
                         Compete with friends.<br>
@@ -352,13 +381,21 @@
                     <p class="hero-description">
                         Create fitness challenges with friends, track your reps, and climb the leaderboard. FitRank turns working out into a game you actually want to play.
                     </p>
-                    <a href="https://apps.apple.com/us/app/fitrank/id6757091519" class="hero-download-btn" aria-label="Download FitRank on the App Store">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M17.995 12.899c-.052-3.378 2.807-4.954 2.934-5.023-1.607-2.36-4.084-2.688-4.961-2.737-2.113-.214-4.116 1.236-5.172 1.236-1.074 0-2.688-1.218-4.43-1.184-2.276.033-4.418 1.346-5.597 3.416-2.387 4.094-.604 10.115 1.716 13.467 1.153 1.676 2.52 3.56 4.316 3.494 1.731-.066 2.378-1.125 4.456-1.125 2.059 0 2.635 1.125 4.43 1.095 1.83-.032 2.998-1.676 4.105-3.341 1.292-1.889 1.833-3.719 1.859-3.8-.042-.022-3.551-1.355-3.66-5.398Z"/>
-                            <path d="M15.097 3.929c.934-1.134 1.558-2.708 1.392-4.284-1.351.058-2.985.902-3.96 2.022-.873 1.011-1.646 2.643-1.442 4.188 1.52.11 3.057-.768 4.01-1.926Z"/>
-                        </svg>
-                        Download on App Store
-                    </a>
+                    <div class="hero-buttons">
+                        <a href="https://apps.apple.com/us/app/fitrank/id6757091519" class="hero-download-btn" aria-label="Download FitRank on the App Store">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.995 12.899c-.052-3.378 2.807-4.954 2.934-5.023-1.607-2.36-4.084-2.688-4.961-2.737-2.113-.214-4.116 1.236-5.172 1.236-1.074 0-2.688-1.218-4.43-1.184-2.276.033-4.418 1.346-5.597 3.416-2.387 4.094-.604 10.115 1.716 13.467 1.153 1.676 2.52 3.56 4.316 3.494 1.731-.066 2.378-1.125 4.456-1.125 2.059 0 2.635 1.125 4.43 1.095 1.83-.032 2.998-1.676 4.105-3.341 1.292-1.889 1.833-3.719 1.859-3.8-.042-.022-3.551-1.355-3.66-5.398Z"/>
+                                <path d="M15.097 3.929c.934-1.134 1.558-2.708 1.392-4.284-1.351.058-2.985.902-3.96 2.022-.873 1.011-1.646 2.643-1.442 4.188 1.52.11 3.057-.768 4.01-1.926Z"/>
+                            </svg>
+                            Download on App Store
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.fitrank.app" class="hero-download-btn-android" aria-label="Get FitRank on Google Play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-1.38l2.473 1.431a1 1 0 0 1 0 1.484l-2.473 1.43-2.553-2.553 2.553-2.553-.001.76zM5.864 3.458L16.8 9.79l-2.302 2.302-8.635-8.635z"/>
+                            </svg>
+                            Get on Google Play
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-image-wrap">
                     <img src="images/hero-mockup.png" alt="FitRank app showing leaderboard and challenges" class="hero-image">
@@ -405,7 +442,7 @@
                         </svg>
                     </div>
                     <div class="faq-content">
-                        <p class="faq-answer">Yes! FitRank is completely free to download and use. Create unlimited challenges, invite as many friends as you want, and track all your workouts without any cost.</p>
+                        <p class="faq-answer">Yes! FitRank is completely free to download and use. All features — unlimited challenges, inviting friends, tracking workouts, and climbing leaderboards — are free. We also offer optional Supporter plans for anyone who wants to help keep FitRank growing, but they're not required to use any part of the app.</p>
                     </div>
                 </div>
                 <div class="faq-block">
@@ -427,7 +464,18 @@
                         </svg>
                     </div>
                     <div class="faq-content">
-                        <p class="faq-answer">FitRank is currently available on iOS. Android support is coming soon! Sign up for updates to be notified when the Android version launches.</p>
+                        <p class="faq-answer">Yes! FitRank is available on both iOS and Android. Download it from the <a href="https://apps.apple.com/us/app/fitrank/id6757091519" style="color: #13ec5b; text-decoration: underline;">App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.fitrank.app" style="color: #13ec5b; text-decoration: underline;">Google Play</a>.</p>
+                    </div>
+                </div>
+                <div class="faq-block">
+                    <div class="faq-header">
+                        <div class="faq-question">What are Supporter plans?</div>
+                        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="faq-content">
+                        <p class="faq-answer">Supporter plans are optional, pay-what-you-want contributions that help keep FitRank free for everyone. There are three tiers — Supporter, Champion, and Legend — starting at $9.99/year. They're a way to support the app's development and help the community grow. FitRank is and will always be fully free to use — Supporter plans are just for those who want to give back.</p>
                     </div>
                 </div>
             </div>
@@ -447,7 +495,7 @@
                     <a href="privacy.html" class="footer-link">Privacy</a>
                     <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
                 </div>
-                <div class="footer-copyright">© 2025 Workshop Labs LLC</div>
+                <div class="footer-copyright">© 2026 Workshop Labs LLC</div>
             </div>
         </div>
     </footer>

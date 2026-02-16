@@ -1,10 +1,10 @@
 /* FitRank Website Styles */
-/* Primary: #13ec5b, Background: #102216, Surface: #193322 */
+/* Primary: #13ec5b, Background: #0b1811, Surface: #193322 */
 
 :root {
     --primary: #13ec5b;
     --primary-dark: #0fc94d;
-    --background-dark: #102216;
+    --background-dark: #0b1811;
     --surface-dark: #193322;
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.8);
